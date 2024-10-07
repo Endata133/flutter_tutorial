@@ -6,7 +6,7 @@ class CurrencyConverterMaterial extends StatelessWidget {
 @override
 Widget build(BuildContext context){
   return const Scaffold(
-    backgroundColor: Color.fromARGB(0, 0, 0, 1),
+    backgroundColor: Colors.black87,
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -20,25 +20,29 @@ Widget build(BuildContext context){
             
             ),
           TextField(
-            textAlign: TextAlign.center,
+            textAlign: TextAlign.start,
             style: TextStyle(
               color: Color.fromRGBO(255, 255, 255, 1),
             ),
             decoration: InputDecoration(
-              label: Text('Ender the amount in USD',
-              style: TextStyle(
-              color: Color.fromRGBO(255, 255, 255, 1),
-            ),
-              )
+              hintText: 'Ender the amount',
               
+              hintStyle: TextStyle(
+                color: Colors.white,
+               ),
+              prefixIcon: Icon(
+                Icons.monetization_on,
+                color: Colors.white,
+                ),
+              contentPadding: EdgeInsets.only(top: 16.0),
+              isDense: true,
 
+              ),
             ),
-          )
-
+            
           ],
         ),
       ),
   );
-  
 }
 }
