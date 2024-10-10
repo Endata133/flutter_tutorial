@@ -19,6 +19,8 @@ Widget build(BuildContext context){
                ),
             
             ),
+
+        
           TextField(
             textAlign: TextAlign.start,
             style: TextStyle(
@@ -26,6 +28,7 @@ Widget build(BuildContext context){
             ),
             decoration: InputDecoration(
               hintText: 'Ender the amount',
+              hoverColor: Colors.white,
               
               hintStyle: TextStyle(
                 color: Colors.white,
@@ -36,6 +39,17 @@ Widget build(BuildContext context){
                 ),
               contentPadding: EdgeInsets.only(top: 16.0),
               isDense: true,
+              focusedBorder: OutlineInputBorder(
+                // Color(0xAARRGGBB)
+                borderSide: BorderSide(
+                  color: Colors.white,
+                  width: 2.0,
+                  style: BorderStyle.solid,
+                ),
+               borderRadius: BorderRadius.all(
+                Radius.circular(40),
+               ),
+              ),
 
               ),
             ),
