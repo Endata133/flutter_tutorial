@@ -11,13 +11,25 @@ Widget build(BuildContext context){
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [ 
-            Text('0',
-            style: TextStyle(
-               fontSize: 50,
-               fontWeight: FontWeight.bold,
-               color: Color.fromARGB(255, 255, 255, 255)
-               ),
-            
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                
+                Padding(
+                  padding: EdgeInsets.only(right: 8.0),
+                  child: Text('0',
+                            
+                  style: TextStyle(
+                     fontSize: 50,
+                     fontWeight: FontWeight.bold,
+                     color: Color.fromARGB(255, 255, 255, 255)
+                     ),
+                     
+                  
+                  ),
+                ),
+                
+              ],
             ),
 
         
