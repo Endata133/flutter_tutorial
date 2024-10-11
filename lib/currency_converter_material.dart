@@ -50,10 +50,8 @@ Widget build(BuildContext context){
                 Radius.circular(40),
                ),
               ),
-
               ),
             ),
-            
           ],
         ),
       ),
